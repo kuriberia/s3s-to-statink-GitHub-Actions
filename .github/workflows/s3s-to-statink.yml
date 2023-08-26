@@ -2,7 +2,8 @@ name: Splatoon3 Battlelog Uplorder
 
 on:
   schedule:
-    - cron: '0 0-23/2 * * *'
+    # - cron: '0 0-23/2 * * *'
+    - cron: '0 8,10,12,14,16 * * *' # 日本時間1,17,19,21,23時に実行
   workflow_dispatch:
 
 jobs:
